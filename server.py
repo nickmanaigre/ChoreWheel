@@ -7,6 +7,12 @@ app = Flask(__name__)
 def main_page(): ## function name doesn't matter to the web app, but try and make it meaningful
 	return render_template('index.html') ## flask knows to look in /templates/ sub-folder
 
+
+@app.route('/showTaskReview')
+def showTaskReview():
+    return render_template('task-review.html')
+
 if __name__ == '__main__':
 	app.debug = True
 	app.run()
+
