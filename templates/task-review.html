@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChoreWheel</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Home</a></li>
+            <li role="presentation"><a href="#">Backlog</a></li>
+            <li role="presentation"><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">ChoreWheel</h3>
+      </div>
+      <div class="jumbotron">
+        <h3>Jim has submitted a task for review:</h3>
+        <form class="form-signin">
+        <div class="paragraphs">
+          <div class="row">
+            <div class="span4">
+              <img style="float:left" src="/static/img/dishes.jpg"/>
+              <div class="content-heading"><h3>Do the Dishes &nbsp </h3></div>
+              <p style="clear:both">All done!!</p>
+              <p style="clear:both">Comments: </p> <p id="comments"></p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a id="approve" href="#" class="btn btn-success">Approve</a>
+          <a href="#" onclick="declineTaskPrompt()" class="btn btn-danger">Decline</a>
+        </div>
+      </form>
+      </div> 
+      <div class="alert alert-success" id="success-alert">
+    <button type="button" class="close" data-dismiss="alert">x</button>
+    <strong>Great! </strong>
+        We'll notify Jim. 
+    </div>
+      <footer class="footer">
+        <p>&copy; ChoreWheel 2016</p>
+      </footer>
+    </div>
+  </body>
+</html>
